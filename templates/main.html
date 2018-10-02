@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+{% block content %}
+       <div class="panel panel-default">
+       <div class="panel-heading">Prelude</div>
+       <div class="panel-body">
+
+	<div class="content-section">This site underscores the traitors 
+	residing in Innovator's Hall who disregard the ambiguous rule of: NO WIRELESS ACCESS POINTS!
+	</div>
+
+       </div>
+       </div>
+
+       <div class="row">
+	<div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel panel-primary text-center no-boder red">
+        <div class="panel-right">
+	<h3>{{deny_count}}</h3>
+        <strong>AP's subject to seizure</strong>
+        </div>
+        </div>
+        </div>
+	
+	<div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel panel-primary text-center no-boder red">
+        <div class="panel-right">
+	<h3>{{allow_count}}</h3>
+        <strong>Authorized repeaters</strong>
+        </div>
+        </div>
+        </div>
+
+	<div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel panel-primary text-center no-boder red">
+        <div class="panel-right">
+	<h3>{{hidden_count}}</h3>
+        <strong>Obscure AP's</strong>
+        </div>
+        </div>
+        </div>
+
+	<div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="panel panel-primary text-center no-boder red">
+        <div class="panel-right">
+	<h3>*ALERT*</h3>
+        <strong>This data is sampled.</strong>
+        </div>
+        </div>
+        </div>
+
+
+</div>
+
+       <div class="panel panel-default">
+       <div class="panel-heading">Network Traitors</div>
+       <div class="panel-body">
+
+	<div class="content-section">Consider thyself captured should your network name arise:
+	<p>{{networks}}</p>
+	</div>
+
+       </div>
+       </div>
+
+	   <div class="panel panel-default">
+	   <div class="panel-heading">Notice</div>
+       <div class="panel-body">
+	<div class="content-section"><a href="https://imgflip.com/i/2j6gw3"><img src="https://i.imgflip.com/2j6gw3.jpg" title="Ducreux's Notice" width="100" height="120"></a></div>
+       </div>
+       </div>
+	
+{% endblock content %}
+
+
+
