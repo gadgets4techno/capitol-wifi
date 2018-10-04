@@ -3,14 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0">
-	<meta http-equiv="refresh" content="11">
-    <title>Capitol Counter-revolutionaries</title>
-    {% block title %}
-    {% if os %}      
-    <link rel="shortcut icon" href="static/{{os}}.ico">
-    {% else %}
-    <link rel="shortcut icon" href="static/aol.ico">
-    {% endif %}
+    <title>Capitol Infodash</title>
+    <link rel="shortcut icon" href="/aol.ico">
+	{% block title %}    
+    
     {% endblock title %}
 	<!-- Bootstrap Styles-->
     <link href="{{ url_for('static', filename='bootstrap.css') }}" rel="stylesheet" type="text/css">
@@ -31,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index"><strong>Capitol Counter-revolutionaries</strong></a>                
+                <a class="navbar-brand" href="index"><strong>Capitol Infodash</strong></a>                
             </div>
 			<span id="forkongithub">
 			<a href="https://github.com/gadgets4techno/capitol-wifi-shame"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>

@@ -1,20 +1,18 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# MQTT config for Capitol Clock
+# MQTT extended library
 
 # Import necessary libraries
 import paho.mqtt.client as mqtt
 from time import sleep as sleep
 
 #MQTT Protocol configuation
-#server = "citadel.technothehero.ddns.net"
 server = "test.mosquitto.org"
 server_port = 1883
 clientid = "ibm_cloud"
 password = "ibm_cloud_pass"
 server_sub_topic = "/discord"
-#discovery_topic = "/arifi/new"
 server_qos = 0
 client = mqtt.Client(clientid)
 
@@ -22,8 +20,8 @@ client = mqtt.Client(clientid)
 connected = False
 payload = None
 
-
-def init():	#a call to this function connects to the broker
+# Connect to the broker
+def init():
  global connected
  m = ""
  try:
